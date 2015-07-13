@@ -59,7 +59,8 @@ assert(1 === 2, 'this is an example of a failing assertion. 1 does not equal 2.'
  it failed.
 */
 
-//your code goes here
+assert("lion" === "lion", 'the word lion is a string - this assert will pass');
+assert("bird" === 4, 'the word bird is a string not a number - this assert will not pass');
 
 /* ========================================================================
 ----------------- Meerkats (20 points total)-------------------------------
@@ -80,7 +81,12 @@ var sentence2 = 'Come over here so you can scratch my belly.';
 // TODO: part #1: use a for loop to replace the words in sentence 1 with
 // 'chirp' (10 points)
 
-// your code goes here
+var array1 = sentence1.split(" ");
+for (var i = 0; i < array1.length; i++) {
+  array1[i]= 'chirp';
+};
+
+sentence1 = array1.join(" ") + ".";
 
 // TODO: part #2: use a while or do-while loop to replace the words in sentence 2
 // with 'chirp' (10 points)
